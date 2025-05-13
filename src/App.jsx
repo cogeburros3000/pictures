@@ -10,7 +10,7 @@ function App() {
     console.log('usted esta buscando con: ', term)
     const result = await searchImages(term)
     setImages(result)
-  }
+  };
 
   return (
     <>
@@ -18,7 +18,7 @@ function App() {
       <SearchBar onSubmit = {handleSubmit}/>
       <ImageList images = {images} />
     </>
-  )
+  );
 }
 
 export default App
